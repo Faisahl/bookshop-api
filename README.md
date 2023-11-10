@@ -16,3 +16,19 @@ Which I eventually refactored after more research by
   - implementing an MVC project pattern
   - used chatGPT to create some JSON test data
 
+## Tested using cURL commands
+
+### GET
+`
+curl -v ’http://localhost:8080/books
+curl -v ’http://localhost:8080/book?id=#
+`
+
+### POST
+`curl -v -d ‘{JSON}’ -H ‘Content-Type: application/json’ http:/localhost:8080/book/new`
+
+### PUT
+`curl -v -d ‘{JSON}’ -H ‘Content-Type: application/json’ -X PUT http://localhost:8080/book?id=#`
+
+### DELETE
+`curl -X DELETE http://localhost:8080/book?id=#`
